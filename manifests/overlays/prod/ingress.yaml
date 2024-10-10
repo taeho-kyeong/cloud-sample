@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: cloud-sample-prod.cepg-82230457-sa.kubepia.net/applications
+  - host: cloud-sample-prod.cepg-82230457-sa.kubepia.net
     http:
       paths:
       - path: /
