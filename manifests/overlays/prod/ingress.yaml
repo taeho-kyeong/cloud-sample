@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: cloud-sample-ingress
 spec:
-  ingressClassName: ingress-internal
+  ingressClassName: nginx
   rules:
   - host: cloud-sample-prod.cepg-82230457-sa.kubepia.net/applications
     http:
