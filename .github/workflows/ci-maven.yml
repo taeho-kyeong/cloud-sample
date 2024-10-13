@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        token: ${{ secrets.REPO_TOKEN }}
+        token: ${{ secrets.AZURE_CREDENTIALS }}
         
     - name: Set up JDK 17
       uses: actions/setup-java@v4
@@ -46,7 +46,7 @@ jobs:
     - name: 'Push image'
       uses: azure/docker-login@v1
       with:
-        login-server: ${{ secrets.STAPACR_LOGIN_SERVER }}
+        login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
         username: ${{ secrets.REGISTRY_USERNAME }}
         password: ${{ secrets.REGISTRY_PASSWORD }}
     
